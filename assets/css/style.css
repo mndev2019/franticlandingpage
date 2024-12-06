@@ -141,6 +141,11 @@ p {
         font-size: 10px;
     }
 }
+@media(max-width:500px){
+    .topheader .left button {
+        padding: 8px 48px;
+    }
+}
 
 
 
