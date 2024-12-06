@@ -7,9 +7,10 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
@@ -17,61 +18,67 @@
     <section class="topheader py-3">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-8 col-12 d-flex gap-2 align-items-center firstcol ">
-                    <div class="d-flex gap-2 ">
-                        <div class="icon iconflag">
-                            <img src="./assets/Image/flag.svg" alt="image" class="img-fluid" />
-                        </div>
-                        <div class="text d-flex gap-1 align-items-center">
-                            <div class="callicon">
-                                <img src="./assets/Image/phone.svg" alt="image" class="img-fluid" />
+                <div class="col-lg-8 col-12 d-md-flex d-block gap-2 align-items-center firstcol ">
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex gap-2 ">
+                            <div class="icon iconflag">
+                                <img src="./assets/Image/flag.svg" alt="image" class="img-fluid" />
                             </div>
-                            <div class="innertext">
-                                <p>
-                                    +91 8447149178
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex gap-2 ">
-                        <div class="icon">
-                            <img src="./assets/Image/usa.svg" alt="image" class="img-fluid" />
-                        </div>
-                        <div class="text d-flex gap-1 align-items-center">
-                            <div class="callicon">
-                                <img src="./assets/Image/phone.svg" alt="image" class="img-fluid" />
-                            </div>
-                            <div class="innertext">
-                                <p>
-                                    +1833-203-7378
-                                </p>
+                            <div class="text d-flex gap-1 align-items-center">
+                                <div class="callicon">
+                                    <img src="./assets/Image/phone.svg" alt="image" class="img-fluid" />
+                                </div>
+                                <div class="innertext">
+                                    <p>
+                                        +91 8447149178
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="d-flex gap-2 ">
-                        <div class="icon">
-                            <img src="./assets/Image/usa.svg" alt="image" class="img-fluid" />
-                        </div>
-                        <div class="text d-flex gap-1 align-items-center">
-                            <div class="callicon">
-                                <img src="./assets/Image/phone.svg" alt="image" class="img-fluid" />
+                        <div class="d-flex gap-2 ">
+                            <div class="icon">
+                                <img src="./assets/Image/usa.svg" alt="image" class="img-fluid" />
                             </div>
-                            <div class="innertext">
-                                <p>
-                                    +1 (217) 216-3819
-                                </p>
+                            <div class="text d-flex gap-1 align-items-center">
+                                <div class="callicon">
+                                    <img src="./assets/Image/phone.svg" alt="image" class="img-fluid" />
+                                </div>
+                                <div class="innertext">
+                                    <p>
+                                        +1833-203-7378
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex gap-2 align-items-center ">
-                        <div class="icon iconsms">
-                            <img src="./assets/Image/mail.png" alt="image" class="img-fluid" />
-                        </div>
-                        <div class="text ">
-                            <p>
-                                sales@franticpro.com
-                            </p>
+                    <div class="d-md-flex d-block">
+                        <div class="d-flex">
+                            <div class="d-flex gap-2 ">
+                                <div class="icon">
+                                    <img src="./assets/Image/usa.svg" alt="image" class="img-fluid" />
+                                </div>
+                                <div class="text d-flex gap-1 align-items-center">
+                                    <div class="callicon">
+                                        <img src="./assets/Image/phone.svg" alt="image" class="img-fluid" />
+                                    </div>
+                                    <div class="innertext">
+                                        <p>
+                                            +1 (217) 216-3819
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center ">
+                                <div class="icon iconsms">
+                                    <img src="./assets/Image/mail.png" alt="image" class="img-fluid" />
+                                </div>
+                                <div class="text ">
+                                    <p>
+                                        sales@franticpro.com
+                                    </p>
 
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -152,31 +159,24 @@
         </nav>
     </section>
     <section class="banner pt-5 position-relative">
-        <img src="./assets/Image/ellipse1.svg" class="img-fluid position-absolute ellipse1 " alt="image"
-           />
-        <img src="./assets/Image/ellipse2.svg" class="img-fluid position-absolute ellipse2 " alt="image"
-           />
-        <img src="./assets/Image/ellipse3.svg" class="img-fluid position-absolute ellipse3 " alt="image"
-         />
-        <img src="./assets/Image/ellipse4.svg" class="img-fluid position-absolute ellipse4 " alt="image"
-           />
-        <img src="./assets/Image/ellipse5.svg" class="img-fluid position-absolute ellipse5 " alt="image"
-            />
-        <img src="./assets/Image/ellipse6.svg" class="img-fluid position-absolute ellipse6 " alt="image"
-          />
-        <img src="./assets/Image/circlearrow.svg" class="img-fluid position-absolute " alt="image"
+
+        <img src="./assets/Image/ellipse1.svg" class="img-fluid position-absolute ellipse1 " alt="image" />
+        <img src="./assets/Image/ellipse2.svg" class="img-fluid position-absolute ellipse2 " alt="image" />
+        <img src="./assets/Image/ellipse3.svg" class="img-fluid position-absolute ellipse3 " alt="image" />
+        <img src="./assets/Image/ellipse4.svg" class="img-fluid position-absolute ellipse4 " alt="image" />
+        <img src="./assets/Image/ellipse5.svg" class="img-fluid position-absolute ellipse5 " alt="image" />
+        <img src="./assets/Image/ellipse6.svg" class="img-fluid position-absolute ellipse6 " alt="image" />
+        <img src="./assets/Image/circlearrow.svg" class="img-fluid position-absolute circlearrow " alt="image"
             style="top: 6px;right:9px;" />
-        <img src="./assets/Image/circleinnerarrow.svg" class="img-fluid position-absolute " alt="image"
+        <img src="./assets/Image/circleinnerarrow.svg" class="img-fluid position-absolute circleinnerarrow" alt="image"
             style="top: 45px;right:38px;" />
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 rightcol position-relative">
-                    <img src="./assets/Image/star1.svg" class="img-fluid position-absolute " alt="image"
-                        style="right: -36px; top: -84px;" />
-                    <img src="./assets/Image/star2.svg" class="img-fluid position-absolute " alt="image"
-                        style="right: 0px; bottom: -25px;" />
-                    <img src="./assets/Image/arrowyellow.svg" class="img-fluid position-absolute arrowyellow" alt="image"
-                     />
+                    <img src="./assets/Image/star1.svg" class="img-fluid position-absolute star1 " alt="image" />
+                    <img src="./assets/Image/star2.svg" class="img-fluid position-absolute star2 " alt="image" />
+                    <img src="./assets/Image/arrowyellow.svg" class="img-fluid position-absolute arrowyellow"
+                        alt="image" />
 
 
                     <h2 class="firstheading">
@@ -210,6 +210,12 @@
             </div>
         </div>
     </section>
+    <div class="position-relative">
+        <div class="oval">
+            <img src="./assets/Image/bannerarrowimage.svg" alt="image" class="img-fluid bannerarrowimage" />
+        </div>
+
+    </div>
     <section class="portfolio py-5">
         <div class="container">
             <div class="row">
@@ -224,50 +230,74 @@
                     </h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 pt-2">
-                    <img src="./assets/Image/portfolio1.svg" alt="image" class="img-fluid" />
+            <div class="div portfolio-slider">
+                <div class="row d-flex">
+                    <div class="col-6 pt-2">
+                        <img src="./assets/Image/portfolio1.svg" alt="image" class="img-fluid" />
+                    </div>
+                    <div class="col-6 secondimage">
+                        <img src="./assets/Image/portfolio2.svg" alt="image" class="img-fluid" />
+                    </div>
+                    <div class="col-6">
+                        <img src="./assets/Image/portfolio3.svg" alt="image" class="img-fluid" />
+                    </div>
+                    <div class="col-6  secondimage">
+                        <img src="./assets/Image/portfolio4.svg" alt="image" class="img-fluid" />
+                    </div>
                 </div>
-                <div class="col-md-6 secondimage">
-                    <img src="./assets/Image/portfolio2.svg" alt="image" class="img-fluid" />
+                <div class="row  d-flex">
+
+
+                    <div class="col-6 pt-2">
+                        <img src="./assets/Image/portfolio1.svg" alt="image" class="img-fluid" />
+                    </div>
+                    <div class="col-6 secondimage">
+                        <img src="./assets/Image/portfolio2.svg" alt="image" class="img-fluid" />
+                    </div>
+                    <div class="col-6">
+                        <img src="./assets/Image/portfolio3.svg" alt="image" class="img-fluid" />
+                    </div>
+                    <div class="col-6  secondimage">
+                        <img src="./assets/Image/portfolio4.svg" alt="image" class="img-fluid" />
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="./assets/Image/portfolio3.svg" alt="image" class="img-fluid" />
-                </div>
-                <div class="col-md-6  secondimage">
-                    <img src="./assets/Image/portfolio4.svg" alt="image" class="img-fluid" />
-                </div>
+
             </div>
         </div>
     </section>
-    <section class="companies py-5">
+    <section class="companies pb-5 px-3">
         <div class="container">
-            <div class="row align-items-center text-center ">
-                <div class="col-md-2 ">
+            <div class="row align-items-center text-center companies-slider ">
+                <div class="col-2 ">
                     <img src="./assets/Image/airbub.svg" alt="image" class="img-fluid " />
                 </div>
-                <div class="col-md-2 ">
+                <div class="col-2 ">
                     <img src="./assets/Image/google.svg" alt="image" class="img-fluid " />
                 </div>
-                <div class="col-md-2 ">
+                <div class="col-2 ">
                     <img src="./assets/Image/amazon.svg" alt="image" class="img-fluid " />
                 </div>
-                <div class="col-md-2 ">
+                <div class="col-2 ">
                     <img src="./assets/Image/microsoft.svg" alt="image" class="img-fluid " />
                 </div>
-                <div class="col-md-2 ">
+                <div class="col-2 ">
                     <img src="./assets/Image/fedex.svg" alt="image" class="img-fluid " />
                 </div>
-                <div class="col-md-2 ">
+                <div class="col-2 ">
                     <img src="./assets/Image/hub.svg" alt="image" class="img-fluid " />
                 </div>
+                <div class="col-2 ">
+                    <img src="./assets/Image/fedex.svg" alt="image" class="img-fluid " />
+                </div>
+
+
             </div>
         </div>
     </section>
-    <section class="aboutus py-5 ">
+    <section class="aboutus py-5 px-3">
         <div class="container">
             <div class="row position-relative">
-                <div class="col-md-5 rightcol ">
+                <div class="col-lg-5 col-12 rightcol ">
                     <p>
                         About Us
                     </p>
@@ -277,13 +307,13 @@
                     <button>
                         Book a Call
                     </button>
-                    <img src="./assets/Image/arrowwhite.svg" alt="image" class="img-fluid  position-absolute"
+                    <img src="./assets/Image/arrowwhite.svg" alt="image" class="img-fluid  position-absolute arrowwhite"
                         style="top:30%;" />
                     <img src="./assets/Image/about2.svg" alt="image" class="img-fluid about2" />
 
 
                 </div>
-                <div class="col-md-7  leftcol">
+                <div class="col-lg-7 col-12  leftcol">
                     <p>
                         Frantic Infotech, established in 2016 in Noida, is India’s most trusted Mobile App Development
                         Company. Specializing in Android, iOS, Cross-Platform, and custom apps, we’ve served 400+ global
@@ -293,55 +323,53 @@
                 </div>
 
             </div>
-
-            <div class="row  text-center position-relative">
+            <div class="counter row d-lg-flex text-center position-relative">
                 <img src="./assets/Image/Star.svg" alt="image" class="img-fluid position-absolute star" />
-                <div class="counter d-flex">
-                    <div class="col-md-3 ">
-                        <p class="syne number  text-center">
-                            8 +
-                        </p>
-                        <p class="content text-center">
-                            Years of Operation
-                        </p>
-                    </div>
-                    <div class="col-md-2 ">
-                        <p class="syne number  text-center">
-                            366 +
-                        </p>
-                        <p class="content text-center">
-                            Projects Delivered
-                        </p>
-                    </div>
-                    <div class="col-md-2 ">
-                        <p class="syne number  text-center">
-                            45 +
-                        </p>
-                        <p class="content text-center">
-                            Specialist
-                        </p>
-                    </div>
-                    <div class="col-md-2 ">
-                        <p class="syne number  text-center">
-                            10 +
-                        </p>
-                        <p class="content text-center">
-                            Country Served
-                        </p>
-                    </div>
-                    <div class="col-md-3 ">
-                        <p class="syne number  text-center">
-                            24/7 +
-                        </p>
-                        <p class="content text-center">
-                            Support Available
-                        </p>
-                    </div>
+                <div class="col-lg-3 col-sm-6 col-12 ">
+                    <p class="syne number  text-center">
+                        8 +
+                    </p>
+                    <p class="content text-center">
+                        Years of Operation
+                    </p>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-12 ">
+                    <p class="syne number  text-center">
+                        366 +
+                    </p>
+                    <p class="content text-center">
+                        Projects Delivered
+                    </p>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-12 ">
+                    <p class="syne number  text-center">
+                        45 +
+                    </p>
+                    <p class="content text-center">
+                        Specialist
+                    </p>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-12 ">
+                    <p class="syne number  text-center">
+                        10 +
+                    </p>
+                    <p class="content text-center">
+                        Country Served
+                    </p>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <p class="syne number  text-center">
+                        24/7 +
+                    </p>
+                    <p class="content text-center">
+                        Support Available
+                    </p>
                 </div>
             </div>
+
         </div>
     </section>
-    <section class="service py-5">
+    <section class="service py-5 px-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -362,9 +390,9 @@
                 <div class="col-md-4 p-2">
                     <div class="position-relative servicebox">
                         <div class="servicecircle">
-                            <img src="./assets/Image/whitearrow.svg" class="img-fluid" alt="image" />
+                            <img src="./assets/Image/whitearrow.svg" class="img-fluid whitearrow" alt="image" />
                         </div>
-                        <img src="./assets/Image/servicebg.svg" class="img-fluid w-100" alt="">
+                        <img src="./assets/Image/servicebg.svg" class="img-fluid w-100 servicebg" alt="">
                         <img src="./assets/Image/service1.svg" class="img-fluid service1" alt="">
                         <h2 class="servicecoltitle">
                             Mobile App Development
@@ -380,9 +408,9 @@
                 <div class="col-md-4 p-2">
                     <div class="position-relative servicebox">
                         <div class="servicecircle">
-                            <img src="./assets/Image/whitearrow.svg" class="img-fluid" alt="image" />
+                            <img src="./assets/Image/whitearrow.svg" class="img-fluid whitearrow" alt="image" />
                         </div>
-                        <img src="./assets/Image/servicebg.svg" class="img-fluid w-100" alt="">
+                        <img src="./assets/Image/servicebg.svg" class="img-fluid w-100 servicebg" alt="">
                         <img src="./assets/Image/service2.svg" class="img-fluid service1" alt="">
                         <h2 class="servicecoltitle">
                             Hire Mobile App Developer
@@ -398,9 +426,9 @@
                 <div class="col-md-4 p-2">
                     <div class="position-relative servicebox">
                         <div class="servicecircle">
-                            <img src="./assets/Image/whitearrow.svg" class="img-fluid" alt="image" />
+                            <img src="./assets/Image/whitearrow.svg" class="img-fluid whitearrow" alt="image" />
                         </div>
-                        <img src="./assets/Image/servicebg.svg" class="img-fluid w-100" alt="">
+                        <img src="./assets/Image/servicebg.svg" class="img-fluid w-100 servicebg" alt="">
                         <img src="./assets/Image/service3.svg" class="img-fluid service1" alt="">
                         <h2 class="servicecoltitle">
                             Website Designing
@@ -415,9 +443,9 @@
                 <div class="col-md-4 p-2">
                     <div class="position-relative servicebox">
                         <div class="servicecircle">
-                            <img src="./assets/Image/whitearrow.svg" class="img-fluid" alt="image" />
+                            <img src="./assets/Image/whitearrow.svg" class="img-fluid whitearrow" alt="image" />
                         </div>
-                        <img src="./assets/Image/servicebg.svg" class="img-fluid w-100" alt="">
+                        <img src="./assets/Image/servicebg.svg" class="img-fluid w-100 servicebg" alt="">
                         <img src="./assets/Image/service4.svg" class="img-fluid service1" alt="">
                         <h2 class="servicecoltitle">
                             Website Development
@@ -432,9 +460,9 @@
                 <div class="col-md-4 p-2">
                     <div class="position-relative servicebox">
                         <div class="servicecircle">
-                            <img src="./assets/Image/whitearrow.svg" class="img-fluid" alt="image" />
+                            <img src="./assets/Image/whitearrow.svg" class="img-fluid whitearrow" alt="image" />
                         </div>
-                        <img src="./assets/Image/servicebg.svg" class="img-fluid w-100" alt="">
+                        <img src="./assets/Image/servicebg.svg" class="img-fluid w-100 servicebg" alt="">
                         <img src="./assets/Image/service5.svg" class="img-fluid service1" alt="">
                         <h2 class="servicecoltitle">
                             Digital Marketing Services
@@ -450,7 +478,7 @@
             </div>
         </div>
     </section>
-    <section class="blogs py-5">
+    <section class="blogs py-5 px-3 position-relative">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -463,94 +491,139 @@
 
                 </div>
             </div>
-            <div class="row pt-4">
-                <div class="col-md-4">
+            <div class="row slider pt-4">
+                <div class="col-md-4 blogbox ">
                     <div class="position-relative">
-                        <img src="./assets/Image/blogs1.svg" alt="image" class="img-fluid" />
+                        <img src="./assets/Image/blogs1.svg" alt="image" class="img-fluid blogscard" />
                         <div class="position-absolute p-3 blogsboxinner">
-                            <h2 class="blogsheading">
-                                Future of Work
-                            </h2>
-                            <p class="blogspara">
-                                Majority of peole will work in jobs that don’t exist today.
-                            </p>
+                            <h2 class="blogsheading">Future of Work</h2>
+                            <p class="blogspara">Majority of people will work in jobs that don’t exist today.</p>
                             <div class="d-flex justify-content-between align-items-center mt-2">
                                 <div class="d-flex align-items-center gap-3">
                                     <div class="icon">
                                         <img src="./assets/Image/blogsavatar.svg" alt="image" class="img-fluid" />
                                     </div>
                                     <div class="text">
-                                        <p>
-                                            Warren Casey
-                                        </p>
+                                        <p>Warren Casey</p>
                                     </div>
                                 </div>
                                 <div class="date">
-                                    <p>
-                                        02 Nov
-                                    </p>
+                                    <p>02 Nov</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <div class="col-md-4 blogbox">
                     <div class="position-relative">
-                        <img src="./assets/Image/blogs2.svg" alt="image" class="img-fluid" />
+                        <img src="./assets/Image/blogs2.svg" alt="image" class="img-fluid blogscard" />
                         <div class="position-absolute p-3 blogsboxinner">
-                            <h2 class="blogsheading">
-                                Future of Data
-                            </h2>
-                            <p class="blogspara">
-                                Thanks to never-ending piles of data & the amount of insight
-                            </p>
+                            <h2 class="blogsheading">Future of Data</h2>
+                            <p class="blogspara">Thanks to never-ending piles of data & the amount of insight</p>
                             <div class="d-flex justify-content-between align-items-center mt-2">
                                 <div class="d-flex align-items-center gap-3">
                                     <div class="icon">
                                         <img src="./assets/Image/blogsavatar.svg" alt="image" class="img-fluid" />
                                     </div>
                                     <div class="text">
-                                        <p>
-                                            Warren Casey
-                                        </p>
+                                        <p>Warren Casey</p>
                                     </div>
                                 </div>
                                 <div class="date">
-                                    <p>
-                                        02 Nov
-                                    </p>
+                                    <p>02 Nov</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <div class="col-md-4 blogbox">
                     <div class="position-relative">
-                        <img src="./assets/Image/blogs3.svg" alt="image" class="img-fluid" />
-                        <div class="position-relative">
-                            <div class="position-absolute p-3 blogsboxinner">
-                                <h2 class="blogsheading">
-                                    Future of Learning
-                                </h2>
-                                <p class="blogspara">
-                                    A constant ability to learn will be on the most crucial skills
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center mt-2">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <div class="icon">
-                                            <img src="./assets/Image/blogsavatar.svg" alt="image" class="img-fluid" />
-                                        </div>
-                                        <div class="text">
-                                            <p>
-                                                Warren Casey
-                                            </p>
-                                        </div>
+                        <img src="./assets/Image/blogs3.svg" alt="image" class="img-fluid blogscard" />
+                        <div class="position-absolute p-3 blogsboxinner">
+                            <h2 class="blogsheading">Future of Learning</h2>
+                            <p class="blogspara">A constant ability to learn will be one of the most crucial skills</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="icon">
+                                        <img src="./assets/Image/blogsavatar.svg" alt="image" class="img-fluid" />
                                     </div>
-                                    <div class="date">
-                                        <p>
-                                            02 Nov
-                                        </p>
+                                    <div class="text">
+                                        <p>Warren Casey</p>
                                     </div>
+                                </div>
+                                <div class="date">
+                                    <p>02 Nov</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 blogbox">
+                    <div class="position-relative">
+                        <img src="./assets/Image/blogs1.svg" alt="image" class="img-fluid blogscard" />
+                        <div class="position-absolute p-3 blogsboxinner">
+                            <h2 class="blogsheading">Future of Work</h2>
+                            <p class="blogspara">Majority of people will work in jobs that don’t exist today.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="icon">
+                                        <img src="./assets/Image/blogsavatar.svg" alt="image" class="img-fluid" />
+                                    </div>
+                                    <div class="text">
+                                        <p>Warren Casey</p>
+                                    </div>
+                                </div>
+                                <div class="date">
+                                    <p>02 Nov</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 blogbox">
+                    <div class="position-relative">
+                        <img src="./assets/Image/blogs2.svg" alt="image" class="img-fluid blogscard" />
+                        <div class="position-absolute p-3 blogsboxinner">
+                            <h2 class="blogsheading">Future of Data</h2>
+                            <p class="blogspara">Thanks to never-ending piles of data & the amount of insight</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="icon">
+                                        <img src="./assets/Image/blogsavatar.svg" alt="image" class="img-fluid" />
+                                    </div>
+                                    <div class="text">
+                                        <p>Warren Casey</p>
+                                    </div>
+                                </div>
+                                <div class="date">
+                                    <p>02 Nov</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 blogbox">
+                    <div class="position-relative">
+                        <img src="./assets/Image/blogs3.svg" alt="image" class="img-fluid blogscard" />
+                        <div class="position-absolute p-3 blogsboxinner">
+                            <h2 class="blogsheading">Future of Learning</h2>
+                            <p class="blogspara">A constant ability to learn will be one of the most crucial skills</p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="icon">
+                                        <img src="./assets/Image/blogsavatar.svg" alt="image" class="img-fluid" />
+                                    </div>
+                                    <div class="text">
+                                        <p>Warren Casey</p>
+                                    </div>
+                                </div>
+                                <div class="date">
+                                    <p>02 Nov</p>
                                 </div>
                             </div>
                         </div>
@@ -578,39 +651,39 @@
             </div>
             <div class="awards-grid grid-container mt-4">
                 <div class="award-item">
-                    <img src="./assets/Image/features1.svg" alt="image" />
+                    <img src="./assets/Image/features1.svg" alt="image" class="img-fluid" />
                 </div>
                 <div class="award-item">
-                    <img src="./assets/Image/features2.svg" alt="image" />
+                    <img src="./assets/Image/features2.svg" alt="image" class="img-fluid" />
                 </div>
                 <div class="award-item">
-                    <img src="./assets/Image/features3.svg" alt="image" />
+                    <img src="./assets/Image/features3.svg" alt="image" class="img-fluid" />
                 </div>
                 <div class="award-item">
-                    <img src="./assets/Image/features4.svg" alt="image" />
+                    <img src="./assets/Image/features4.svg" alt="image" class="img-fluid" />
                 </div>
                 <div class="award-item">
-                    <img src="./assets/Image/features5.svg" alt="image" />
+                    <img src="./assets/Image/features5.svg" alt="image" class="img-fluid" />
                 </div>
                 <div class="award-item">
-                    <img src="./assets/Image/features6.svg" alt="image" />
+                    <img src="./assets/Image/features6.svg" alt="image" class="img-fluid" />
                 </div>
                 <div class="award-item">
-                    <img src="./assets/Image/features7.svg" alt="image" />
+                    <img src="./assets/Image/features7.svg" alt="image" class="img-fluid" />
                 </div>
                 <div class="award-item">
-                    <img src="./assets/Image/features8.svg" alt="image" />
+                    <img src="./assets/Image/features8.svg" alt="image" class="img-fluid" />
                 </div>
                 <div class="award-item">
-                    <img src="./assets/Image/features9.svg" alt="image" />
+                    <img src="./assets/Image/features9.svg" alt="image" class="img-fluid" />
                 </div>
                 <div class="award-item">
-                    <img src="./assets/Image/features10.svg" alt="image" />
+                    <img src="./assets/Image/features10.svg" alt="image" class="img-fluid" />
                 </div>
             </div>
         </div>
     </section>
-    <section class="testimonial py-5">
+    <section class="testimonial py-5 px-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -625,24 +698,58 @@
                     </p>
                 </div>
             </div>
-            <div class="row mt-5 ">
+            <div class="row mt-5 single-item ">
                 <div class="col-md-12 testimonialouterbox">
                     <div class="w-100 testimonialbox">
                         <div class="row align-items-center">
-                            <div class="col-md-6 position-relative">
-                                <img src="./assets/Image/testimonialimg.svg" class="img-fluid w-100" />
-                                <!-- Clickable Circle -->
+                            <div class="col-lg-6 col-12 position-relative">
+                                <img src="./assets/Image/testimonialimg.svg" class="img-fluid w-100 testimonialimg" />
+
                                 <div class="circle" data-bs-toggle="modal" data-bs-target="#testimonialModal">
-                                    <img src="./assets/Image/play.svg" alt="image" class="img-fluid" />
+                                    <img src="./assets/Image/play.svg" alt="image" class="img-fluid playimg" />
                                 </div>
                             </div>
-                            <div class="col-md-6 p-4">
+                            <div class="col-lg-6 col-12 p-4">
                                 <img src="./assets/Image/webflow.svg" class="img-fluid" />
                                 <p class="para mt-2">
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud"
                                 </p>
                                 <div class="d-flex align-items-center gap-3 mt-3">
+                                    <div class="icon">
+                                        <img src="./assets/Image/testimonialprofile.svg" alt="image"
+                                            class="img-fluid" />
+                                    </div>
+                                    <div class="text">
+                                        <p class="para1">
+                                            Sophie Moore
+                                        </p>
+                                        <p class="para2">
+                                            Webflow Developer
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-12 testimonialouterbox">
+                    <div class="w-100 testimonialbox">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-12 position-relative">
+                                <img src="./assets/Image/testimonialimg.svg" class="img-fluid w-100 testimonialimg" />
+
+                                <div class="circle" data-bs-toggle="modal" data-bs-target="#testimonialModal">
+                                    <img src="./assets/Image/play.svg" alt="image" class="img-fluid" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 p-4">
+                                <img src="./assets/Image/webflow.svg" class="img-fluid" />
+                                <p class="para mt-2">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud"
+                                </p>
+                                <div class="d-flex align-items-center gap-2 gap-md-3 mt-3">
                                     <div class="icon">
                                         <img src="./assets/Image/testimonialprofile.svg" alt="image"
                                             class="img-fluid" />
@@ -681,9 +788,9 @@
             </div>
         </div>
     </div>
-    <section class="contact py-5">
+    <section class="contact py-5 px-3">
         <div class="container">
-            <div class="row pb-4">
+            <div class="row pb-3 pb-lg-4">
                 <div class="col-md-12">
                     <p class="title">
                         Contact Us
@@ -827,24 +934,24 @@
                 </div>
             </div>
     </section>
-    <section class="footer py-5">
+    <section class="footer py-5 px-3">
         <div class="container">
-            <div class="row pb-5 firstrow">
-                <div class="col-md-3">
+            <div class="row pb-lg-5 pb-3 firstrow">
+                <div class="col-lg-3 col-12">
                     <div class="w-100">
                         <img src="./assets/Image/logo.svg" alt="image" class="img-fluid" />
-                        <p class="pt-4">
+                        <p class="pt-lg-4 pt-2">
                             Frantic Infotech is India’s leading and most trusted Mobile App Development Company based in
                             Noida. Established in 2016, and over 6+ years we have grown as a leading company.
                         </p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-6 col-12">
                     <div class="w-100 secondcol">
                         <h2 class="head">
                             Why Frantic?
                         </h2>
-                        <ul class="p-0 m-0 pt-4 space-y-2">
+                        <ul class="p-0 m-0 pt-lg-4 pt-2 space-y-2">
                             <li class="mb-3">About Us</li>
                             <li class="mb-3">How it Works</li>
                             <li class="mb-3">Our Vision & Mission</li>
@@ -861,11 +968,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-6 col-12">
                     <div class="w-100">
                         <h2 class="head">
                             Mobile & Web</h2>
-                        <ul class="p-0 m-0 pt-4 space-y-2">
+                        <ul class="p-0 m-0 pt-lg-4 pt-2  space-y-2">
                             <li class="mb-3">Mobile App Development</li>
                             <li class="mb-3">Android UI/UX App Development</li>
                             <li class="mb-3">Iphone App Development</li>
@@ -881,11 +988,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-6 col-12">
                     <div class="w-100">
                         <h2 class="head">
                             Digital Marketing</h2>
-                        <ul class="p-0 m-0 pt-4 space-y-2">
+                        <ul class="p-0 m-0 pt-lg-4 pt-2  space-y-2">
                             <li class="mb-3">Search Engine Optimization (SEO)</li>
                             <li class="mb-3">PPC Management Services (PPC)</li>
                             <li class="mb-3">Social Media Optimization (SMO)</li>
@@ -898,14 +1005,14 @@
                     </div>
                 </div>
             </div>
-            <div class="row pt-5 ">
-                <div class="d-flex justify-content-between align-items-center">
+            <div class="row pt-lg-4 pt-2  ">
+                <div class="d-block d-lg-flex justify-content-between align-items-center">
                     <div>
                         <p class="para">
                             © 2016. All rights reserved by Frantic Infotech.
                         </p>
                     </div>
-                    <div class="d-flex gap-2">
+                    <div class="d-flex gap-2 mt-lg-0 mt-3">
                         <img src="./assets/Image/twitter.svg" alt="image" class="img-fluid" />
                         <img src="./assets/Image/facebook.svg" alt="image" class="img-fluid" />
                         <img src="./assets/Image/instagram.svg" alt="image" class="img-fluid" />
@@ -917,6 +1024,111 @@
             </div>
         </div>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Initialize Slick Slider -->
+    <script>
+        $(document).ready(function () {
+            $('.portfolio-slider').slick({
+                infinite: true,       // Enables infinite scrolling
+                slidesToShow: 1,      // Show one row at a time
+                slidesToScroll: 1,    // Scroll one row at a time
+                dots: false,           // Show navigation dots
+                arrows: true,         // Show navigation arrows (optional)
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.single-item').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                // autoplay: true,
+                // autoplaySpeed: 2000,
+                dots: false,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                        },
+                    },
+                ],
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.companies-slider').slick({
+                autoplay: true,             // Automatically play the slider
+                autoplaySpeed: 2000,       // Speed in milliseconds
+                arrows: false,             // Disable next/prev arrows
+                dots: false,                // Show navigation dots
+                infinite: true,            // Infinite loop
+                slidesToShow: 6,           // Number of logos visible at a time
+                slidesToScroll: 1,         // Number of logos to scroll at a time
+                responsive: [
+                    {
+                        breakpoint: 992,   // Screen size <= 992px
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 768,   // Screen size <= 768px
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 576,   // Screen size <= 576px
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                // autoplay: true,
+                // autoplaySpeed: 2000,
+                dots: false,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                ],
+            });
+        });
+    </script>
+
 </body>
 
 </html>
