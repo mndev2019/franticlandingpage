@@ -27,6 +27,9 @@
     align-items: center;
     justify-content: center; */
 }
+a{
+    color: #16385C;
+}
 
 @media (min-width: 300px) and (max-width: 992px) {
     .oval {
@@ -1016,7 +1019,8 @@ p {
     width: 30%;
     transition: width 0.4s ease;
     /* Smooth transition for width */
-    margin-top: 5px
+    margin-top: 5px;
+    border-radius: 5px;
 }
 
 .service .servicebox:hover .line {
@@ -1036,17 +1040,21 @@ p {
     display: flex;
 
 }
-
-.service .servicebox .servicecircle .whitearrow {
-    position: relative;
-    transition: transform 0.3s ease;
-    /* Smooth animation */
+/* .whitearrow {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  } */
+.servicecircle:hover .whitearrow{
+    transition: transform 0.3s ease-in-out;
+    transform: translate(150%, -150%);
 }
+.servicecircle:hover .whitearrow {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
+  }
+  
 
-.service .servicebox .servicecircle:hover .whitearrow {
-    transform: translateX(-10px);
-    /* Moves the image up */
-}
+
 @media(max-width:400px){
     .service .servicebox .servicecircle .whitearrow{
         max-width: 17px;
@@ -1845,6 +1853,12 @@ p {
     }
 
 }
+@media (min-width: 992px) and (max-width: 1600px) {
+    .testimonialmodal .modal-body{
+        height:400px;
+    }
+}
+
 
 /*contact */
 .contact .title {
@@ -2103,4 +2117,60 @@ p {
 
 .footer .firstrow {
     border-bottom: 1px solid #4D749F;
+}
+.twitter-icon {
+    width: 40px; 
+    height: 40px;
+    background-image: url('../../assets/Image/twitter.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+
+.twitter-icon:hover {
+    background-image: url('../../assets/Image/filltwitter.svg');
+}
+.facebook-icon {
+    width: 40px; 
+    height: 40px;
+    background-image: url('../../assets/Image/facebook.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+.facebook-icon:hover {
+    background-image: url('../../assets/Image/fillfacebook.svg');
+}
+.instagram-icon {
+    width: 40px; 
+    height: 40px;
+    background-image: url('../../assets/Image/instagram.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+.instagram-icon:hover {
+    background-image: url('../../assets/Image/fillinstagram.svg');
+}
+.linkedin-icon {
+    width: 40px; 
+    height: 40px;
+    background-image: url('../../assets/Image/linkedin.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+.linkedin-icon:hover {
+    background-image: url('../../assets/Image/filllinkdin.svg');
+}
+.pinterest-icon {
+    width: 40px; 
+    height: 40px;
+    background-image: url('../../assets/Image/pinterest.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+.pinterest-icon:hover {
+    background-image: url('../../assets/Image/fillpinterest.svg');
 }
