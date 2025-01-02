@@ -8,26 +8,17 @@
     -webkit-box-sizing: border-box;
 }
 
-/* .ovalborder {
-    position: absolute;
-    left: 50%;
-    top: 23px;
-    transform: translateX(-50%); 
-}*/
+
 
 .oval {
-    /* height: 80px;
-    width: 54px;
-    background-color: #15375C;
-    border-radius: 48px; */
+
     position: absolute;
     left: 48%;
     top: -63px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+
 }
-a{
+
+a {
     color: #16385C;
 }
 
@@ -61,6 +52,56 @@ p {
 
 .body {
     font-family: "Lato", sans-serif;
+}
+
+#quoteModal .required::after {
+    content: " *";
+    color: #d40000;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#quoteModal label {
+    font-weight: 500;
+    color: #16385C;
+}
+
+#quoteModal .modal-footer {
+    background-color: #16385C;
+    justify-content: center;
+    padding: 3px;
+}
+
+#quoteModal .modal-footer p a {
+    color: white;
+}
+
+#quoteModal form .form-control {
+    border-radius: 0;
+}
+
+#quoteModal .btn {
+    width: 100%;
+    border-radius: 50px;
+    background-color: #16385C;
+    border: none;
+}
+
+#quoteModal .btn:hover {
+    background-color: #170F49;
+}
+
+#quoteModal .digit {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #000;
+}
+@media(max-width:400px){
+    #quoteModal .resultAns{
+        width: 44%;
+    }
 }
 
 .topheader .iconflag {
@@ -144,7 +185,8 @@ p {
         font-size: 10px;
     }
 }
-@media(max-width:500px){
+
+@media(max-width:500px) {
     .topheader .left button {
         padding: 8px 48px;
     }
@@ -789,16 +831,15 @@ p {
     background-repeat: no-repeat;
     display: inline-block;
     width: 11px;
-    /* Adjust as needed */
     height: 19px;
-    /* Adjust as needed */
+
 }
 
 /* companies */
 .companies-slider {
     display: flex;
     align-items: center;
-    /* Centers child elements vertically */
+
 }
 
 .companies-slider .col-2 {
@@ -1018,7 +1059,6 @@ p {
     border: 2px solid #15375C;
     width: 30%;
     transition: width 0.4s ease;
-    /* Smooth transition for width */
     margin-top: 5px;
     border-radius: 5px;
 }
@@ -1040,26 +1080,26 @@ p {
     display: flex;
 
 }
-/* .whitearrow {
-    position: absolute;
-    transform: translate(-150%, 150%);
-  } */
-.servicecircle:hover .whitearrow{
+
+
+.servicecircle:hover .whitearrow {
     transition: transform 0.3s ease-in-out;
     transform: translate(150%, -150%);
 }
+
 .servicecircle:hover .whitearrow {
     transition: transform 0.3s ease-in-out 0.1s;
     transform: translate(0);
-  }
-  
+}
 
 
-@media(max-width:400px){
-    .service .servicebox .servicecircle .whitearrow{
+
+@media(max-width:400px) {
+    .service .servicebox .servicecircle .whitearrow {
         max-width: 17px;
     }
 }
+
 @media (min-width: 1000px) and (max-width: 1200px) {
     .service .servicebox .servicecircle {
         height: 50px;
@@ -1149,7 +1189,8 @@ p {
         left: 21px;
     }
 }
-@media(max-width:400px){
+
+@media(max-width:400px) {
     .service .service1 {
         left: 16px;
         top: 14px;
@@ -1420,11 +1461,7 @@ p {
     }
 }
 
-/* .blogs .slick-prev {
-    position: absolute;
-    top: -45px;
-    left: 89% !important;
-} */
+
 
 .blogs .slick-prev {
     border-radius: 50%;
@@ -1498,9 +1535,8 @@ p {
     background-repeat: no-repeat;
     display: inline-block;
     width: 11px;
-    /* Adjust as needed */
     height: 19px;
-    /* Adjust as needed */
+
 }
 
 /* features */
@@ -1564,47 +1600,35 @@ p {
 .grid-container {
     display: grid;
     gap: 26px;
-    /* Adjust spacing between grid items */
+
 }
 
 @media (min-width: 1200px) {
-
-    /* For large and extra-large screens, 5 items per row */
     .features .grid-container {
         grid-template-columns: repeat(5, 1fr);
     }
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
-
-    /* For large and extra-large screens, 5 items per row */
     .features .grid-container {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
-
-    /* For large and extra-large screens, 5 items per row */
     .features .grid-container {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (min-width: 500px) and (max-width: 768px) {
-
-    /* For large and extra-large screens, 5 items per row */
     .features .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 
-/* @media (min-width: 300px) and (max-width: 991px) {
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    }
-} */
+
 
 
 .features .award-item {
@@ -1621,9 +1645,8 @@ p {
 
 .features .award-item:hover {
     transform: scale(1.05);
-    /* Slightly enlarge on hover */
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
-    /* Add a stronger shadow */
+
 }
 
 /*testimonial*/
@@ -1802,9 +1825,7 @@ p {
     background-repeat: no-repeat;
     display: inline-block;
     width: 17px;
-    /* Adjust as needed */
     height: 24px;
-    /* Adjust as needed */
 }
 
 @media(max-width:500px) {
@@ -1853,9 +1874,10 @@ p {
     }
 
 }
+
 @media (min-width: 992px) and (max-width: 1600px) {
-    .testimonialmodal .modal-body{
-        height:400px;
+    .testimonialmodal .modal-body {
+        height: 400px;
     }
 }
 
@@ -2118,8 +2140,9 @@ p {
 .footer .firstrow {
     border-bottom: 1px solid #4D749F;
 }
+
 .twitter-icon {
-    width: 40px; 
+    width: 40px;
     height: 40px;
     background-image: url('../../assets/Image/twitter.svg');
     background-size: cover;
@@ -2130,47 +2153,112 @@ p {
 .twitter-icon:hover {
     background-image: url('../../assets/Image/filltwitter.svg');
 }
+
 .facebook-icon {
-    width: 40px; 
+    width: 40px;
     height: 40px;
     background-image: url('../../assets/Image/facebook.svg');
     background-size: cover;
     background-repeat: no-repeat;
     transition: background-image 0.3s ease;
 }
+
 .facebook-icon:hover {
     background-image: url('../../assets/Image/fillfacebook.svg');
 }
+
 .instagram-icon {
-    width: 40px; 
+    width: 40px;
     height: 40px;
     background-image: url('../../assets/Image/instagram.svg');
     background-size: cover;
     background-repeat: no-repeat;
     transition: background-image 0.3s ease;
 }
+
 .instagram-icon:hover {
     background-image: url('../../assets/Image/fillinstagram.svg');
 }
+
 .linkedin-icon {
-    width: 40px; 
+    width: 40px;
     height: 40px;
     background-image: url('../../assets/Image/linkedin.svg');
     background-size: cover;
     background-repeat: no-repeat;
     transition: background-image 0.3s ease;
 }
+
 .linkedin-icon:hover {
     background-image: url('../../assets/Image/filllinkdin.svg');
 }
+
 .pinterest-icon {
-    width: 40px; 
+    width: 40px;
     height: 40px;
     background-image: url('../../assets/Image/pinterest.svg');
     background-size: cover;
     background-repeat: no-repeat;
     transition: background-image 0.3s ease;
 }
+
 .pinterest-icon:hover {
     background-image: url('../../assets/Image/fillpinterest.svg');
+}
+
+
+
+/* dropdown property */
+.header .navbar .collapse .navbar-nav .dropdown {
+    position: static;
+}
+
+.header .navbar .collapse .navbar-nav .dropdown .dropdown-menu {
+    width: 90%;
+    left: 50%;
+    right: 0;
+    top: 70px;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+.header .navbar .collapse .navbar-nav .dropdown .dropdown-menu a.nav-link.active {
+    font-weight: 700;
+    background-color: #16385C;
+    color: #fff;
+    border-radius: 3px 14px;
+}
+
+@media(max-width:992px) {
+    .header .navbar .collapse .navbar-nav .dropdown .dropdown-menu {
+
+        transform: none;
+    }
+}
+
+.icon-plus {
+    width: 15px;
+    height: 15px;
+    top: 14px;
+    background: #16385C;
+    border-radius: 50%;
+    line-height: 11px;
+    text-align: center;
+    color: #fff;
+    right: 10px;
+}
+
+
+#menuShowA,
+#menuShowB,
+#menuShowC,
+#menuShowD,
+#menuShowE,
+#menuShowF,
+#menuShowG,
+#menuShowH,
+#menuShowI {
+    display: none;
+    /* Hide by default */
+
 }

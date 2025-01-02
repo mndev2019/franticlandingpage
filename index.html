@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -84,16 +83,91 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-12 left d-flex justify-content-center justify-content-sm-end ">
-                    <button class="lato ml-5">
+                    <button class="lato ml-5" data-bs-toggle="modal" data-bs-target="#quoteModal">
                         Request a Quote
                     </button>
                     <button class="lato">
-                        Book a Call
+                        <a href="https://www.franticpro.com/contact/" style="color: white; text-decoration: none;">Book
+                            a Call</a>
                     </button>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Modal -->
+    <div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="./assets/Image/logo.svg" alt="image" class="img-fluid" />
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="userName" class="form-label required">Name</label>
+                            <input type="text" class="form-control required" id="userName" placeholder="Enter Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="usermail" class="form-label required">Email</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Enter Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phoneNumber" class="form-label required">Phone</label>
+                            <div class="input-group">
+                                <select class="form-select" id="countryCode"
+                                    style="max-width: 100px; border-radius: 0;">
+                                    <option value="+1">+1</option>
+                                    <option value="+91">+91</option>
+                                </select>
+                                <input type="text" class="form-control" id="phoneNumber"
+                                    placeholder="Enter Mobile Number">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="serviceSelect" class="form-label required">What are you looking for?</label>
+                            <select class="form-select" id="serviceSelect" aria-label="What Are You Looking For?"
+                                style=" border-radius: 0;">
+                                <option selected>What Are You Looking For?</option>
+                                <option value="enterprise">Enterprise Software Solutions</option>
+                                <option value="mobile-app">Creating a Mobile App</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="dedicated-team">Dedicated Team Service</option>
+                                <option value="consulting">IT Consulting Services</option>
+                                <option value="product-enhancement">Enhancing an Existing Product</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label required">Message</label>
+                            <textarea class="form-control" id="message" rows="4"
+                                placeholder="Enter your Description"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex gap-3 w-100 justify-content-start">
+                                <input type="number" name="" id="digit1" class="digit border" value="">
+                                <input type="text" name="" id="" value="+" class="digit border" readonly="">
+                                <input type="number" name="" id="digit2" class="digit border">
+                                <input type="text" name="" id="" value="=" class="digit border" readonly="">
+
+                                <input type="number" name="resultVal" id="resultAns" class="resultAns border">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>
+                        <a href="tel:+918447149178" style="text-decoration: none;">+91 8447149178</a>
+                    </p>
+
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -110,45 +184,614 @@
                                 aria-expanded="false">
                                 Why Frantic?
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item"> <a class="nav-link active" href="">Why Frantic
+                                                    </a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/how-it-work/">How it Works</a>
+                                                </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/about/">About Us</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/mission/">Our Vision &amp;
+                                                        Mission</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/buisness-engagment/">&gt;Business
+                                                        Engagement Models</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/quality/">Quality
+                                                        Relationships</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/design-method/">Design
+                                                        Methodology</a> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="nav flex-column mt-md-5 pt-md-2">
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/development-method/">Development
+                                                        Methodology</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/project-communication/">Project
+                                                        Communication</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/client-review/">Client
+                                                        Reviews</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/faq/">FAQs</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/contact/">Contact</a> </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </li>
                         <li class="nav-item dropdown ">
                             <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                                aria-expanded="false" data-bs-auto-close="outside">
                                 Services
                             </a>
-                            <ul class="dropdown-menu">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item"> <a class="nav-link active" href="#">Mobile App
+                                                    </a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/mobile-app-development/">Mobile
+                                                        App Development </a>
+                                                </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/native-mobile-app-development/">Native
+                                                        Mobile App Development </a>
+                                                </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/flutter-app-development/">Flutter
+                                                        App Development </a>
+                                                </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/react-native-app-development/">React
+                                                        Native App development</a>
+                                                </li>
+                                                <li class="nav-item d-flex justify-content-between align-items-center">
+                                                    <a class="nav-link i"
+                                                        href="https://www.franticpro.com/cross-platform-mobile-app/">Cross-Platform
+                                                        Mobile App </a><span class="icon-plus" id="menuA">+</span>
+                                                </li>
+                                                <div id="menuShowA">
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/hybrid-app-development/">Hybrid
+                                                            App Development </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/ipad-app-development/">Ipad
+                                                            App Development</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/tablet-app-development/">Tablet
+                                                            App Development </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/wearable-app-development/">Wearable
+                                                            App Development </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/hardware-app-development/">Hardware
+                                                            App Development</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/event-app-development/">Event
+                                                            Mobile App Development </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/custom-software-development/">Custom
+                                                            Software Development </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/iphone-app-development/">iphone
+                                                            app development </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/phonegap-app-development/">Phone
+                                                            Gap app development </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/penetration-testing/">Penetration
+                                                            testing </a> </li>
+                                                </div>
+                                                <li class="nav-item"> <a class="nav-link active" href="#">Hire
+                                                        Developers </a> </li>
+
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/android-app-developer/">Android
+                                                        App Developer </a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/ui-ux-designer/">UI/UX Designer
+                                                    </a> </li>
+                                                <li class="nav-item d-flex justify-content-between align-items-center">
+                                                    <a class="nav-link i"
+                                                        href="https://www.franticpro.com/swift-developer/">Swift
+                                                        Developer</a>
+                                                    <span class="icon-plus" id="menuB">+</span>
+                                                </li>
+                                                <div id="menuShowB">
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/php-developer/">PHP
+                                                            Developer </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/web-developer/">Web
+                                                            Developer </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/ios-app-developers/">iOS
+                                                            App Developer</a> </li>
+
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/backend-developer/">Back-end
+                                                            Developer </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/mobile-app-developer/">Mobile
+                                                            App Developer</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/flutter-app-developer/">Flutter
+                                                            app developer </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/react-native-app-developer/">React
+                                                            native app developer</a> </li>
+                                                </div>
+                                                <li class="nav-item"> <a class="nav-link active" href="#">App
+                                                        Development Process</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/mobile-app-strategy/">Mobile
+                                                        App Strategy </a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/mobile-app-design-company/">Mobile
+                                                        App Design Company </a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/mobile-app-support-and-maintenance/">Mobile
+                                                        App Support &amp; Maintenance </a> </li>
+                                                <li class="nav-item d-flex justify-content-between align-items-center">
+                                                    <a class="nav-link i"
+                                                        href="https://www.franticpro.com/mobile-app-porting/">Mobile App
+                                                        Porting </a>
+                                                    <span class="icon-plus" id="menuC">+</span>
+                                                </li>
+                                                <div id="menuShowC">
+
+                                                    <li class="nav-item"> <a class="nav-link active" href="#">Custom
+                                                            Software </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/software-maintenance-and-support/">Software
+                                                            Maintenance &amp; Support </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/product-development/">Product
+                                                            Development </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/software-testing/">Software
+                                                            Testing </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/software-conceptualization-and-design/">Software
+                                                            Conceptualization &amp; Design</a> </li>
+
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" href="#">Android App
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link i"
+                                                        href="https://www.franticpro.com/android-app-development/">Android
+                                                        App Development</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link i"
+                                                        href="https://www.franticpro.com/android-chat-app-development/">Android
+                                                        Chat App Development </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link i"
+                                                        href="https://www.franticpro.com/android-social-app-development/">Android
+                                                        Social App Development </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link i"
+                                                        href="https://www.franticpro.com/android-taxi-app-development/">Android
+                                                        Taxi App Development</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link i"
+                                                        href="https://www.franticpro.com/android-education-app-development/">Android
+                                                        Education App Development</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link i"
+                                                        href="https://www.franticpro.com/on-demand-android-app-development/">On
+                                                        Demand Android App Development</a>
+                                                </li>
+                                                <li class="nav-item d-flex justify-content-between align-items-center">
+                                                    <a class="nav-link i"
+                                                        href="https://www.franticpro.com/android-real-estate-app-development/">Android
+                                                        Real Estate App Development</a>
+                                                    <span class="icon-plus" id="menuD">+</span>
+                                                </li>
+                                                <div id="menuShowD">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i"
+                                                            href="https://www.franticpro.com/ui-ux-android-app-development/">UI/UX
+                                                            Android App Development</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i"
+                                                            href="https://www.franticpro.com/android-ecommerce-app-development/">Android
+                                                            Ecommerce App</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i"
+                                                            href="https://www.franticpro.com/android-event-app-development/">Android
+                                                            Event App Development</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i"
+                                                            href="https://www.franticpro.com/android-startup-app-development/">Android
+                                                            Startup App Development</a>
+                                                    </li>
+                                                </div>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" href="#">Ios App </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link i"
+                                                        href="https://www.franticpro.com/ios-app-development/">ios App
+                                                        Development</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link i"
+                                                        href="https://www.franticpro.com/ios-chat-app-development/">ios
+                                                        Chat App Development </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link i"
+                                                        href="https://www.franticpro.com/ios-taxi-app-development/">ios
+                                                        Taxi App Development</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link i"
+                                                        href="https://www.franticpro.com/on-demand-ios-app-development/">On
+                                                        Demand iOS App Development</a>
+                                                </li>
+                                                <li class="nav-item d-flex justify-content-between align-items-center">
+                                                    <a class="nav-link i"
+                                                        href="https://www.franticpro.com/ios-social-app-development/">ios
+                                                        Social App Development</a>
+                                                    <span class="icon-plus" id="menuE">+</span>
+                                                </li>
+                                                <div id="menuShowE">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i"
+                                                            href="https://www.franticpro.com/ios-ecommerce-app-development/">ios
+                                                            Ecommerce App Development</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i"
+                                                            href="https://www.franticpro.com/ios-event-app-development/">ios
+                                                            Event App Development</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i"
+                                                            href="https://www.franticpro.com/ios-startup-app-development/">ios
+                                                            Startup App Development</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i"
+                                                            href="https://www.franticpro.com/ios-real-estate-app-development/">ios
+                                                            Real Estate App</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i"
+                                                            href="https://www.franticpro.com/ios-education-app-development/">ios
+                                                            Education Application</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i"
+                                                            href="https://www.franticpro.com/ios-ui-ux-app-development/">ios
+                                                            UI/UX app development</a>
+                                                    </li>
+                                                </div>
+
+                                                <div id="menuShowF">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">Blockchain
+                                                            Development Company </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i" href="#">Cryptocurrency
+                                                            Exchange </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i" href="#">Cryptocurrency
+                                                            Wallet </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i" href="#">Smart Contracts
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i" href="#">Smart Contract
+                                                            Audit</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i" href="#">Private
+                                                            Blockchains</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i" href="#">Blockchain
+                                                            Supply Chain </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i" href="#">Ethereum
+                                                            Developers</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i" href="#">Hyperledger
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link i" href="#">Solidity</a>
+                                                    </li>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item"> <a class="nav-link active" href="#">Website
+                                                        Design</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/website-design-company/">Website
+                                                        design Company</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/static-website-design/">Static
+                                                        Website Design Company </a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/dynamic-website-design-company/">Dynamic
+                                                        Website Design Company</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/cms-website-design-company/">CMS
+                                                        Website Design Company</a> </li>
+                                                <li class="nav-item d-flex justify-content-between align-items-center">
+                                                    <a class="nav-link i"
+                                                        href="https://www.franticpro.com/responsive-web-design-company/">Responsive
+                                                        Web Design Company</a>
+                                                    <span class="icon-plus" onclick="menug()" id="menuG">+</span>
+                                                </li>
+                                                <div id="menuShowG" style="display: none;">
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/theme-based-website-design-company/">Theme
+                                                            Based Web Design Compan</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/startup-website-design-company/">Startup
+                                                            Website Design Company</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/custom-website-design-company/">Custom
+                                                            Website Design Company</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/mobile-website-designing-company/">Mobile
+                                                            Website Design Company</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/ecommerce-website-design-company/">Ecommerce
+                                                            Web Design Company</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/java-web-development/">JAVA
+                                                            Web Development</a> </li>
+                                                </div>
+                                                <li class="nav-item"> <a class="nav-link active" href="#">Website
+                                                        Development</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/website-development-company/">Website
+                                                        Development Company</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/real-estate-website-development-company/">Real
+                                                        Estate Website Development company</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/eCommerce-website-development-company/">Ecommerce
+                                                        Website Development Company</a> </li>
+                                                <li class="nav-item  d-flex justify-content-between align-items-center">
+                                                    <a class="nav-link i"
+                                                        href="https://www.franticpro.com/job-portal-website-development-company/">Job
+                                                        Portal Website development company </a>
+                                                    <span class="icon-plus" id="menuH" onclick="menuh()">+</span>
+                                                </li>
+                                                <div id="menuShowH">
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/b2b-website-development-company/">B2B
+                                                            Website Development company</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/b2c-website-development-company/">B2C
+                                                            Website Development company</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/hotel-website-development-company/">Hotel
+                                                            Website Development company</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/travel-website-development-company/">Travel
+                                                            Website Development company</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/healthcare-website-development-company/">Healthcare
+                                                            Website development company</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/start-up-website-development-company/">Startup
+                                                            Website Development company</a>
+                                                    </li>
+                                                </div>
+                                                <li class="nav-item"> <a class="nav-link active" href="#">Framework
+                                                        Development</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/codeigniter-web-development/">CodeIgniter
+                                                        Web Development</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/laravel-web-development/">Laravel
+                                                        Web Development</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/php-web-development/">Php Web
+                                                        development</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/angular-js-web-development/">Angular
+                                                        JS Web Development</a> </li>
+                                                <li class="nav-item  d-flex justify-content-between align-items-center">
+                                                    <a class="nav-link i"
+                                                        href="https://www.franticpro.com/wordpress-web-development/">Wordpress
+                                                        web development </a>
+                                                    <span class="icon-plus" id="menuI" onclick="menui()">+</span>
+                                                </li>
+                                                <div id="menuShowI">
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/html-css-development/">HTML
+                                                            CSS Development</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/dot-net-framework/">Dot net
+                                                            framework</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link active" href="#">Digital
+                                                            Marketing Service</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/social-media-optimization/">Social
+                                                            Media Optimization (SMO)</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/search-engine-optimization/">Search
+                                                            Engine Optimization (SEO)</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/ppc-services/">PPC (Pay Per
+                                                            Click) Service</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/social-media-marketing/">Social
+                                                            Media Marketing (SMM)</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/content-marketing-services/">Content
+                                                            Marketing Service</a> </li>
+                                                    <li class="nav-item"> <a class="nav-link i"
+                                                            href="https://www.franticpro.com/online-reputation-management/">Online
+                                                            reputation Management</a> </li>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li class="nav-item dropdown ">
                             <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Case Studies
                             </a>
-                            <ul class="dropdown-menu">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item"> <a class="nav-link active"
+                                                        href="javascript:void(0)">Success Stories </a> </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/badavypar/">Badavyapar</a>
+                                                </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/sanjeevni/">Sanjeevni</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/marg/">Marg</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/daynight/">Daynight Foods</a>
+                                                </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/catz/">Catz</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/infinity-content/">Infinity
+                                                        Content</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/AIMEEE/">AIMEEE</a> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/mathsomania/">Mathsomania</a>
+                                                </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/legizzy/">Legizzy</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/tedeflix/">Tediflix</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/connect/">Connect</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/doc24/">Doc 24</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/Handy-Mandy/">Handy Mandy</a>
+                                                </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/ALB/">ALB</a> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/skyzaar/">Skyzaar</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/infravilla/">Infravilla</a>
+                                                </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/bshs/">BSHS</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/healmylife/">Heal Mylife</a>
+                                                </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/maanvi/">Mannvi</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/V-tok/">V tok</a> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/afpi/">Afpi</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/outbuds/">Outbuds</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/jmdlingua/">Jmdlingua</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/earlymorning/">Early
+                                                        Morning</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/gatiman/">Gatiman</a> </li>
+                                                <li class="nav-item"> <a class="nav-link i"
+                                                        href="https://www.franticpro.com/Get-delivered/">Get
+                                                        delivered</a> </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                            <a class="nav-link active" aria-current="page"
+                                href="https://www.franticpro.com/contact/">Contact Us</a>
                         </li>
                     </ul>
 
@@ -958,6 +1601,7 @@
                             <a href="https://www.franticpro.com/mission/">
                                 <li class="mb-3">Our Vision & Mission</li>
                             </a>
+                            
                             <a href="https://www.franticpro.com/buisness-engagment/">
                                 <li class="mb-3">Business Engagement Models</li>
                             </a>
@@ -1076,6 +1720,52 @@
             </div>
         </div>
     </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const toggleMenu = (menuId, icon) => {
+                const menu = document.getElementById(menuId);
+                const currentDisplay = menu.style.display;
+
+
+
+                if (currentDisplay === 'none' || currentDisplay === '') {
+                    menu.style.display = 'block';
+                    icon.textContent = '-';
+                    icon.classList.add('toggled');
+                } else {
+                    menu.style.display = 'none';
+                    icon.textContent = '+';
+                    icon.classList.remove('toggled');
+                }
+            };
+
+
+            document.getElementById('menuA').addEventListener('click', function () {
+                toggleMenu('menuShowA', this);
+            });
+
+            document.getElementById('menuB').addEventListener('click', function () {
+                toggleMenu('menuShowB', this);
+            });
+
+            document.getElementById('menuC').addEventListener('click', function () {
+                toggleMenu('menuShowC', this);
+            });
+            document.getElementById('menuD').addEventListener('click', function () {
+                toggleMenu('menuShowD', this);
+            });
+            document.getElementById('menuE').addEventListener('click', function () {
+
+                toggleMenu('menuShowE', this);
+            });
+            document.getElementById('menuF').addEventListener('click', function () {
+
+                toggleMenu('menuShowF', this);
+            });
+
+        });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Slick JS -->
@@ -1084,11 +1774,11 @@
     <script>
         $(document).ready(function () {
             $('.portfolio-slider').slick({
-                infinite: true,       // Enables infinite scrolling
-                slidesToShow: 1,      // Show one row at a time
-                slidesToScroll: 1,    // Scroll one row at a time
-                dots: false,           // Show navigation dots
-                arrows: true,         // Show navigation arrows (optional)
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+                arrows: true,
             });
         });
     </script>
@@ -1122,28 +1812,28 @@
     <script>
         $(document).ready(function () {
             $('.companies-slider').slick({
-                autoplay: true,             // Automatically play the slider
-                autoplaySpeed: 2000,       // Speed in milliseconds
-                arrows: false,             // Disable next/prev arrows
-                dots: false,                // Show navigation dots
-                infinite: true,            // Infinite loop
-                slidesToShow: 6,           // Number of logos visible at a time
-                slidesToScroll: 1,         // Number of logos to scroll at a time
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                dots: false,
+                infinite: true,
+                slidesToShow: 6,
+                slidesToScroll: 1,
                 responsive: [
                     {
-                        breakpoint: 992,   // Screen size <= 992px
+                        breakpoint: 992,
                         settings: {
                             slidesToShow: 3
                         }
                     },
                     {
-                        breakpoint: 768,   // Screen size <= 768px
+                        breakpoint: 768,
                         settings: {
                             slidesToShow: 3
                         }
                     },
                     {
-                        breakpoint: 576,   // Screen size <= 576px
+                        breakpoint: 576,
                         settings: {
                             slidesToShow: 2
                         }
@@ -1180,6 +1870,44 @@
             });
         });
     </script>
+    <script>
+        window.onload = function () {
+            var digit1 = Math.floor(Math.random() * 10);
+            var digit2 = Math.floor(Math.random() * 10);
+            document.getElementById('digit1').value = digit1;
+            document.getElementById('digit2').value = digit2;
+            // document.getElementById('resultAns').value = digit1 + digit2;
+        };
+    </script>
+    <script>
+        function menug() {
+            var menu = document.getElementById("menuShowG");
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+
+        function menuh() {
+            var menu = document.getElementById("menuShowH");
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+        function menui() {
+            var menu = document.getElementById("menuShowI");
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+
+    </script>
+   
 
 </body>
 
