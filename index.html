@@ -154,7 +154,7 @@
                                 <input type="number" name="resultVal" id="resultAns" class="resultAns border">
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary" id="submitBtn" disabled>Submit</button>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -1601,7 +1601,7 @@
                             <a href="https://www.franticpro.com/mission/">
                                 <li class="mb-3">Our Vision & Mission</li>
                             </a>
-                            
+
                             <a href="https://www.franticpro.com/buisness-engagment/">
                                 <li class="mb-3">Business Engagement Models</li>
                             </a>
@@ -1874,9 +1874,18 @@
         window.onload = function () {
             var digit1 = Math.floor(Math.random() * 10);
             var digit2 = Math.floor(Math.random() * 10);
+            var resultAnsInput = document.getElementById('resultAns');
+            var submitBtn = document.getElementById('submitBtn');
             document.getElementById('digit1').value = digit1;
             document.getElementById('digit2').value = digit2;
-            // document.getElementById('resultAns').value = digit1 + digit2;
+            resultAnsInput.addEventListener('input', function () {
+                var userAnswer = parseInt(resultAnsInput.value, 10);
+                if (userAnswer === digit1 + digit2) {
+                    submitBtn.disabled = false;
+                } else {
+                    submitBtn.disabled = true;
+                }
+            });
         };
     </script>
     <script>
@@ -1907,7 +1916,7 @@
         }
 
     </script>
-   
+
 
 </body>
 
