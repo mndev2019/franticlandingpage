@@ -53,6 +53,14 @@ p {
 .body {
     font-family: "Lato", sans-serif;
 }
+#quoteModal .modal-content .modal-header{
+    background-color:#16385C ;
+   
+}
+#quoteModal .modal-content .modal-header .logodiv{
+    background-color: white;
+    border-radius: 5px;
+}
 
 #quoteModal .required::after {
     content: " *";
